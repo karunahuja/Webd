@@ -7,21 +7,39 @@
     <!-- important will take highest priority -->
     <!-- internal css -->
     <style>
-        p{color:red;
-        background-color: orange !important;
-        }
 
+        p{
+            border: 1px solid;
+        }
+        /*id selector*/
+        #firstpara{color:red;
+       
+        }
+        /*class selector*/
+        .bgBlue
+        {
+            color:yellow;
+            background-color: blue;
+        }
+        /* grouping selector*/
+        span,footer{
+            background-color:pink;
+        }
     </style>
 
     <!-- below written will take more priority -->
     <!-- external css -->
-    <link rel="stylesheet" href="Start.css">
+    <!-- <link rel="stylesheet" href="Start.css"> -->
 </head>
 
 
 <body>
     <h3>This is css Tutorial</h3>
-    <p>This is purple color by internal css</p>
+    <p id="firstpara" >This is purple color by internal css</p>
 
+    <div><p id="second para" class="redELement bgBlue">This is yet anothr para</p></div>
+    <p>Other para</p>
+    <span>span</span>
+    <footer>footer</footer>
 </body>
 </html>
