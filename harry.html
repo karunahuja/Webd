@@ -90,7 +90,47 @@
         </tbody>
 
     </table>
+    <br>
+    <form action="backend.php">
 
+        <div>
+            <label for="name">Name</label> <input type="text" name="myName" id="name"></div>
+        <div> Role:<input type="text" name="myRole" id=""></div>
+        <div>Email: <input type="email" name="Email" id=""></div>
+
+
+
+        <div>Date<input type="date" value=""></div>
+        <br>
+        <div>
+            Bonus <input type="number" name="MyBonus">
+        </div>
+        Are you eligible: <input type="checkbox" checked name="myEligible">
+        </div>
+        <br>
+        <div>
+            <!-- name same hai that's why ek check hoga -->
+            Gender:Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender">
+        </div>
+
+
+        <div>Write about urself<input type="textarea" id="" rows="10" cols="5"></div>
+        <div>
+            <label for="car">car</label>
+            <select name="mycar" id="car">
+                <option value="BMW" selected>BMW</option>
+
+                <option value="AUDI">AUDI</option>
+
+            </select>
+        </div>
+        <div><input type="reset" value="Reset now"></div>
+
+
+        <div><input type="submit" value="Submit now"></div>
+
+
+    </form>
 </body>
 
 </html>
