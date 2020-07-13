@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color:red;
+            color:black;
+            font-weight:bold;text-align:center;
+
+
+        }
+        div p{ /*all p inside div*/
+            color:aqua;
+            background-color:orange;
+            font-weight:bold;
+        }
+
+        div>p{ /*direct child p inside div*/
+        color:green;
+        
+        }
+
+        div+p{ /*previous sibling is div mtlb jis p ke pehle /div ho */
+            color:white;
+            background-color:red;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>This is more on a selectors</h1>
+
+    <div class="container">
+        <ul>
+
+            <li class="item">
+                <p>This is another para insilede li</p>
+            </li>
+        </ul>
+
+<div class="row">
+    <p>This is paragraph</p>
+
+</div>
+<p>This is another para</p>
+
+
+    </div>
+    <p>This is outermost para</p>
+</body>
+</html>
