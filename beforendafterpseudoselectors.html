@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: white;
+
+            background-color: black;
+
+
+        }
+
+        header::before {
+            background: url("https://source.unsplash.com/random/30*30") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+
+        }
+
+
+
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 20px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+
+        }
+
+        section::after {
+
+            content: "This is content";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navBar">
+
+            <ul class="navigation">
+
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact US</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+
+        <h3>
+
+
+            Welcome to Coding WOrld
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit ad deleniti dolorum autem velit
+            odit. Vel eos esse corrupti a hic itaque consequatur. Necessitatibus nihil animi facere, explicabo quae
+            omnis sit alias magni?</p>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
