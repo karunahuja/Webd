@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            border: 2px solid red;
+            margin: 23px 12px;
+            box-shadow: -10px 13px 10px 5px green;
+            /* box-shadow:offset-x offset-ycolor*/
+            /*box-shadow:offset-x offset-ycolor blur-radius spread-radius color*/
+
+            /*agar andar ki taraf reqd ho*/
+            box-shadow: inset -10px 13px 10px 5px green;
+
+            /*multiple shadows*/
+            box-shadow: -10px 13px green, 10px 13px red;
+
+
+        }
+         h2{
+            text-shadow:3px 4px rgb(211, 205, 205);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card card-1">
+            <h2>card1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores impedit aperiam numquam aliquam, veniam
+                hic praesentium cupiditate fugit delectus temporibus nesciunt quo? Minima iste, sit facere iusto natus
+                repudiandae debitis magni accusantium illo possimus.</p>
+        </div>
+        <div class="card card-2">
+            <h2>card2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores impedit aperiam numquam aliquam, veniam
+                hic praesentium cupiditate fugit delectus temporibus nesciunt quo? Minima iste, sit facere iusto natus
+                repudiandae debitis magni accusantium illo possimus.</p>
+        </div>
+        <div class="card card-3">
+            <h2>card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores impedit aperiam numquam aliquam, veniam
+                hic praesentium cupiditate fugit delectus temporibus nesciunt quo? Minima iste, sit facere iusto natus
+                repudiandae debitis magni accusantium illo possimus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
