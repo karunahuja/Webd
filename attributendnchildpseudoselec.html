@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            display:block;
+            width:232px;
+            margin:auto;
+        }
+        input{
+            display:block;
+        }
+        input[type="text"]{
+            padding:23px;
+            border:2px solid red;
+        }
+        a[target]{
+            font-size:44px;
+            color:red;
+        }
+        a[target="_self"]{
+            font-size:14px;
+            color:blue;
+        }
+        input[type="email"]
+{
+color:yellow;
+
+}   
+li:nth-child(3){
+    color:cyan;
+}
+li:nth-child(2n+0){
+    color:cyan;
+}
+
+
+
+ </style>
+</head>
+<body>
+    <div class="container">
+        <h1 href="https://google.com" target="_blank">Google to Google</h1>
+        <h1 href="https://google.com" target="_self">Google to Google</h1>
+        <form action="" class="form-control">
+            <input type="text" class="text">
+            <input type="text" class="text">
+            <input type="email" class="text">
+
+
+        </form>
+        <ul>
+        <li class="item" id="item-1">Item-1</li>
+        <li class="item" id="item-2">Item-2</li>
+        <li class="item" id="item-3">Item-3</li>
+        <li class="item" id="item-4">Item-4</li>
+        <li class="item" id="item-5">Item-5</li>
+        </ul>
+        </div>
+
+</body>
+</html>
