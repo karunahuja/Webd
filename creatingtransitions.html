@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+            transition-property: all; /* or background-color or any for changing all prop.*/
+            transition-duration: 4s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        #box:hover {
+            background-color: white;
+            height:400px;
+            width:400px;
+            font-size:25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>
+
+        This is css tutorial
+    </h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+
+</html>
