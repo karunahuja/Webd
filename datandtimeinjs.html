@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        This is container
+    </div>
+    <script>
+
+        let now = new Date();
+        console.log(now);
+
+        //reference date  of 1970
+        let dt = new Date(0);
+        console.log(dt);
+
+
+        //refernce date se itna aage chla jaega
+        let dt = new Date(1000);
+        console.log(dt);
+
+
+
+        let newDate = new Date("2029-09-23");
+        console.log(newDate);
+
+        //let newDate1=new Date(year,month,date,hours,minutes,seconds,milliseconds);
+        let newDate1 = new Date(3020, 4, 6, 9, 3, 2, 34);
+        console.log(newDate1);
+
+        let yr = newDate1.getFullYear();
+        console.log(yr);
+
+
+        let month = newDate1.getMonth();
+        console.log(month);
+
+        //will set to 8 of next month
+        newDate1.setDate(39);
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
