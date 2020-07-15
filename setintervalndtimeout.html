@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containe" id="time">
+        This is container
+
+    </div>
+    <script>
+    function greet(){
+        console.log("hello good morning");
+    }
+    
+    // set timeout runs the func once after the interval of time and clear interval runs the function repeatedly after interval of time 
+    setTimeout(function(){
+        console.log("hi")
+    },5000);
+
+    //there should be no paranthesis in the function
+    setTimeout(greet,5000); 
+    
+    function greeting(name){
+        console.log("Hello"+name);
+    }
+
+    setTimeout(greeting,3,"karun");    
+
+    //the below one will not run due to clearTimeout
+    timeout=setTimeout(greet,500,"rahul");
+    clearTimeout(timeout);
+
+    //runs in infinite loop 1s 
+    setInterval(greet,1000,"rohan");
+
+    //below will not run
+    intervalId=setInterval(greet,1000,"rohan");
+    clearInterval(intervalId);
+
+    //dynamic time on web page
+    function displayTime(){
+        time =new Date;
+        console.log(time);
+        document.getElementById("time").innerHTML=time;
+    }
+
+    setInterval(displayTime,1000);
+    </script>
+</body>
+</html>
