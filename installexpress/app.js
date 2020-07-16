@@ -1,9 +1,18 @@
 const express=require('express');
 const app=express();
 const port=80;
+const path=require("path");
+
+app.use('/static',express.static('static'));
+
+//set template engine for pug
+
+app.set('views',path.join(__dirname,'views'));
+
+//our pug demo endpoint
 
 app.get("/",(req,res)=>{
-    res.send("first express app");
+    res.render('demo.pug', { title: 'Hey', message: 'Hello there!' })
 
 });
 app.get("/about",(req,res)=>{
