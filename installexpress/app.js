@@ -2,36 +2,21 @@ const express=require('express');
 const app=express();
 const port=80;
 const path=require("path");
-
+//Express specific stuff
 app.use('/static',express.static('static'));
 
-//set template engine for pug
+//Pug specific stuff
+app.set('view engine','pug');
 
+//Set views directory
 app.set('views',path.join(__dirname,'views'));
 
-//our pug demo endpoint
-
-app.get("/",(req,res)=>{
-    res.render('demo.pug', { title: 'Hey', message: 'Hello there!' })
-
-});
-app.get("/about",(req,res)=>{
-    res.send("about page of first express app");
-
-});
-app.get("/",(req,res)=>{
-    res.status(200).send("first express app");
-
-});
-app.post("/about",(req,res)=>{
-    res.send("post for first express app");
-
-});
-app.get("/this",(req,res)=>{
-    res.status(404).send("post for first express app");
-
-});
-
+//Endpoints
+app.get('/',(req,res)=>{
+    const con="This is best cocntent";
+    const params={'title':"pubg is best","content":con};
+    res.status(200).render('index.pug',params);
+})
 app.listen(port,()=>{
     console.log("application started on port")
 })
