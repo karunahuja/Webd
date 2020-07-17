@@ -1,0 +1,46 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+ 
+block style
+    style
+        include ../static/style.css
+
+block content
+
+    section#introSection
+        div Welcome To Karun Dance Academy
+        div.small Eat Dance Repeat
+    section#missionSection
+        h3 Our Mission
+        div.card
+            h4 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        div.card
+            h4 Dance The Way You like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        div.card
+            h4 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+
+    section#sponsorSection
+        h3 Our sponsors
+        div#sponsors
+            img(src="/static/img/logo1.png" class="spImage")
+            img(src="/static/img/logo2.png" class="spImage")
+            img(src="/static/img/logo3.png" class="spImage")
+            img(src="/static/img/logo4.png" class="spImage")
+            
