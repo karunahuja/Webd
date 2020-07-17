@@ -1,0 +1,36 @@
+//- index.pug
+doctype html
+html
+  title Karun Dance Academy
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navBar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Contact Us]
+            li #[a(href="/") Class Info]
+    section#introSection
+        div Welcome To Karun Dance Academy
+        div.small Eat Dance Repeat
+    section#missionSection
+        h3 Our Mission
+        div.card
+            p Dance Perfection
+        div.card
+            p Dance The Way You like
+        div.card
+            p Expert Teaching
+
+    section#sponsorSection
+        h3 Our sponsors
+            
+    section#footer
+        | footer
+            
+    script
+      include ../static/index.js
+
