@@ -11,7 +11,7 @@
 #navBar ul {
 display: flex;
 flex-direction:row;
-justify-content:center;
+
 }
 #navBar li{
     list-style: none;
@@ -51,6 +51,16 @@ opacity:0.7;
 h3{
     font-size:36px;
 }
+#logo{
+    display: flex;
+    color:white;
+    align-items: center;
+  
+}
+#logo img{
+    height:42px;
+    filter:invert(1)
+}
 .card{
     border: 1px solid black;
     border-radius:10px;
@@ -58,6 +68,24 @@ h3{
     margin:23px;
     height:209px;
 display: inline-block;
+
+}
+.card-box{
+    display:flex;align-items:center;
+    justify-content:space-between;
+}
+.card-img{
+    height:131px;
+    padding:0px 14px;
+    margin:12px;
+}
+
+.card-img img{
+    height:inherit;
+   
+}
+.card-content{
+    padding:10px 10px;
 
 }
 #sponsorSection{
